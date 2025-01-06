@@ -119,7 +119,7 @@ function App() {
           </div>
         ))}
         <button className="add-btn" onClick={addApplication}>
-          + Add Application
+          + Add Button
         </button>
       </header>
 
@@ -142,7 +142,7 @@ function App() {
             </div>
           ))}
           <button className="add-btn" onClick={addDocument}>
-            + Add Document
+            + Add Button
           </button>
         </aside>
 

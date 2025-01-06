@@ -12,6 +12,7 @@ body {
 
 .topbar {
   display: flex;
+  flex-wrap: wrap; 
   align-items: center;
   background-color: #282c34;
   color: white;
@@ -20,6 +21,7 @@ body {
 
 .app-item {
   margin-right: 10px;
+  margin-bottom: 5px; 
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -38,7 +40,7 @@ body {
 }
 
 .add-btn {
-  background-color: #61dafb;
+  background-color: green;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
@@ -49,6 +51,7 @@ body {
 .main-container {
   display: flex;
   flex: 1; 
+  flex-direction: row;
 }
 
 .sidebar {
@@ -56,6 +59,8 @@ body {
   background-color: #f0f0f0;
   padding: 10px;
   border-right: 1px solid #ccc;
+  display: flex; 
+  flex-direction: column;
 }
 
 .doc-item {
@@ -93,4 +98,67 @@ body {
   background-color: #61dafb;
   border: none;
   border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column; 
+  }
+
+  .sidebar {
+    width: 100%; 
+    border-right: none;
+    border-bottom: 1px solid #ccc; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+  }
+
+  .doc-item {
+    margin-right: 10px; 
+    margin-bottom: 5px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: flex-start; 
+  }
+
+  .app-item {
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-btn, .nav-btn {
+    padding: 5px; 
+  }
+
+  .topbar {
+    font-size: 14px;
+  }
+
+  .doc-item, .app-item {
+    font-size: 14px;
+  }
+
+  .content h1 {
+    font-size: 18px; 
+  }
+
+  .upload-input {
+    width: 100%; 
+  }
+
+  .sidebar, .topbar {
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
 }
