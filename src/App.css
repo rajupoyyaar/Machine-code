@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+}
+
+.app-item {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.app-item.active {
+  background-color: #61dafb;
+}
+
+.delete-btn {
+  margin-left: 5px;
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.add-btn {
+  background-color: #61dafb;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: black;
+}
+
+.main-container {
+  display: flex;
+  flex: 1; 
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.doc-item {
+  margin-bottom: 5px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.doc-item.active {
+  background-color: #61dafb;
+}
+
+.content {
+  flex: 1; 
+  padding: 20px;
+}
+
+.upload-input {
+  display: block;
+  margin-top: 10px;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+}
+
+.nav-btn {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+}
